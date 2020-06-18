@@ -13,6 +13,11 @@ button:focus {
   box-shadow: none !important;
 }
 
+/* Table strike*/
+table .strike {
+  text-decoration: line-through;
+}
+
 /* Typography classes*/
 .font-baloo {
   font-family: "Baloo Thambi 2", cursive;

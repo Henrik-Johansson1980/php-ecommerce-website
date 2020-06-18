@@ -71,5 +71,35 @@ $(document).ready(function () {
 				items: 3
 			}
 		}
-	});
+    });
+    
+    // Product Quantity Section
+    const $qtyUp = $(".qty .qty-up");
+    const $qtyDown = $(".qty .qty-down");
+    let $input = $(".qty .qty-input");
+
+    // Add event listeners to qty buttons
+    $qtyUp.click(function(e){
+        if(isNaN($input.val())) {
+           $input.val(1);
+            return;
+        }
+        if($input.val() >= 1 && $input.val() < 10 ) {
+            $input.val(function(i, oldValue){
+                return ++oldValue;
+            });
+        }
+    });
+    $qtyDown.click(function(e){
+        if(isNaN($input.val())) {
+           $input.val(1);
+            return;
+        }
+        if($input.val() < 10 && $input.val() > 1 ) {
+            $input.val(function(i, oldValue){
+                return --oldValue;
+            });
+        }
+    });
+
 });
