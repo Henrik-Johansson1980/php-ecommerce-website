@@ -3,6 +3,10 @@
 /* Fonts*/
 /* Colors*/
 /* Global Classes*/
+html {
+  scroll-behavior: smooth;
+}
+
 button,
 button:focus {
   outline: none !important;
@@ -11,7 +15,7 @@ button:focus {
 
 /* Typography classes*/
 .font-baloo {
-  font-family: "Ballo Thambi 2", cursive;
+  font-family: "Baloo Thambi 2", cursive;
 }
 
 .font-raleway {
@@ -65,6 +69,46 @@ button:focus {
 
 .color-yellow-bg {
   background: #FFD289;
+}
+
+/* Top-Sale template */
+#top-sale .owl-carousel .item .product a {
+  overflow: hidden;
+}
+#top-sale .owl-carousel .item .product img {
+  transition: transform 0.5s ease;
+}
+#top-sale .owl-carousel .item .product img:hover {
+  transform: scale(1.1);
+}
+#top-sale .owl-carousel .owl-nav button {
+  position: absolute;
+  top: 30%;
+  outline: none;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev {
+  left: 0;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next {
+  right: 0;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev span,
+#top-sale .owl-carousel .owl-nav button.owl-next span {
+  font-size: 35px;
+  color: #003859;
+  padding: 0 1rem;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev span {
+  margin-left: -4rem;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next span {
+  margin-right: -4rem;
+}
+
+/* Special Price Template*/
+#special-price .grid .grid-item {
+  margin-top: 1rem;
+  margin-right: 1.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
