@@ -1,3 +1,7 @@
+<?php 
+
+    namespace mobileshop;
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -17,6 +21,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
         <!-- Custom CSS -->
         <link rel="stylesheet" href="style.css">
+
+        <?php 
+            require_once './functions.php';
+        ?>
+
     </head>
 
     <body>

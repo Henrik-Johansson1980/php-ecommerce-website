@@ -1,8 +1,11 @@
 <?php
 
+require './database/DBController.php';
+
 // Include header template.
 require_once './header.php';
 
+// var_dump($db);
 // Include banner area template.
 include './Templates/banner-area.php';
 

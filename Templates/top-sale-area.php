@@ -5,12 +5,14 @@
         <hr>
         <!-- OWL Carousel -->
         <div class="owl-carousel owl-theme">
+        <?php foreach ($products as $item) : ?>
             <div class="item py-2">
                 <div class="product font-raleway">
-                    <a href="#"><img src="./assets/products/1.png" alt="product 1" class="img-fluid">
+                    <a href="#">
+                    <img src="<?php echo htmlspecialchars( (isset( $item['item_image']) && $item['item_image'] != '') ? $item['item_image'] : './assets/comingsoon.png' , ENT_QUOTES, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars( $item['item_brand'] . ' ' . $item['item_name'], ENT_QUOTES, 'UTF-8'); ?>" class="img-fluid p-2">
                     </a>
                     <div class="text-center">
-                        <h6>Samsung Galaxy 10</h6>
+                        <h6><?php echo htmlspecialchars( $item['item_brand'] . ' ' . $item['item_name'], ENT_QUOTES, 'UTF-8'); ?></h6>
                         <div class="rating text-warning font-size12">
                             <span><i class="fas fa-star"></i></span>
                             <span><i class="fas fa-star"></i></span>
@@ -19,133 +21,14 @@
                             <span><i class="far fa-star"></i></span>
                         </div>
                         <div class="price py-2">
-                            <span>$152</span>
+                            <span>$<?php echo htmlspecialchars( $item['item_price'], ENT_QUOTES, 'UTF-8'); ?></span>
                         </div>
-                        <button type="submit" class="btn btn-warning font-size-12">Add To</button>
+                        <button type="submit" class="btn btn-warning font-size-12">Add To Cart</button>
                     </div>
                 </div>
             </div>
-            <div class="item py-2">
-                <div class="product font-raleway">
-                    <a href="#"><img src="./assets/products/2.png" alt="product 1" class="img-fluid">
-                    </a>
-                    <div class="text-center">
-                        <h6>Xiaomi Redmi Note 7</h6>
-                        <div class="rating text-warning font-size12">
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="far fa-star"></i></span>
-                        </div>
-                        <div class="price py-2">
-                            <span>$152</span>
-                        </div>
-                        <button type="submit" class="btn btn-warning font-size-12">Add To</button>
-                    </div>
-                </div>
+            <?php endforeach; ?>
             </div>
-            <div class="item py-2">
-                <div class="product font-raleway">
-                    <a href="#"><img src="./assets/products/3.png" alt="product 1" class="img-fluid">
-                    </a>
-                    <div class="text-center">
-                        <h6>Xiaomi Redmi Note 7</h6>
-                        <div class="rating text-warning font-size12">
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="far fa-star"></i></span>
-                        </div>
-                        <div class="price py-2">
-                            <span>$152</span>
-                        </div>
-                        <button type="submit" class="btn btn-warning font-size-12">Add To</button>
-                    </div>
-                </div>
-            </div>
-            <div class="item py-2">
-                <div class="product font-raleway">
-                    <a href="#"><img src="./assets/products/4.png" alt="product 1" class="img-fluid">
-                    </a>
-                    <div class="text-center">
-                        <h6>Xiaomi Redmi Note 7</h6>
-                        <div class="rating text-warning font-size12">
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="far fa-star"></i></span>
-                        </div>
-                        <div class="price py-2">
-                            <span>$152</span>
-                        </div>
-                        <button type="submit" class="btn btn-warning font-size-12">Add To</button>
-                    </div>
-                </div>
-            </div>
-            <div class="item py-2">
-                <div class="product font-raleway">
-                    <a href="#"><img src="./assets/products/5.png" alt="product 1" class="img-fluid">
-                    </a>
-                    <div class="text-center">
-                        <h6>Xiaomi Redmi Note 7</h6>
-                        <div class="rating text-warning font-size12">
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="far fa-star"></i></span>
-                        </div>
-                        <div class="price py-2">
-                            <span>$152</span>
-                        </div>
-                        <button type="submit" class="btn btn-warning font-size-12">Add To</button>
-                    </div>
-                </div>
-            </div>
-            <div class="item py-2">
-                <div class="product font-raleway">
-                    <a href="#"><img src="./assets/products/4.png" alt="product 1" class="img-fluid">
-                    </a>
-                    <div class="text-center">
-                        <h6>Xiaomi Redmi Note 7</h6>
-                        <div class="rating text-warning font-size12">
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="far fa-star"></i></span>
-                        </div>
-                        <div class="price py-2">
-                            <span>$152</span>
-                        </div>
-                        <button type="submit" class="btn btn-warning font-size-12">Add To</button>
-                    </div>
-                </div>
-            </div>
-            <div class="item py-2">
-                <div class="product font-raleway">
-                    <a href="#"><img src="./assets/products/5.png" alt="product 1" class="img-fluid">
-                    </a>
-                    <div class="text-center">
-                        <h6>Xiaomi Redmi Note 7</h6>
-                        <div class="rating text-warning font-size12">
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="far fa-star"></i></span>
-                        </div>
-                        <div class="price py-2">
-                            <span>$152</span>
-                        </div>
-                        <button type="submit" class="btn btn-warning font-size-12">Add To</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- OWL Carousel End-->
+        </div> <!-- OWL Carousel End-->
     </div>
 </section><!-- Top Sale End -->
